@@ -1,5 +1,7 @@
-require_relative 'duck_waterlily_pond'
+require_relative 'duck'
+require_relative 'waterlily'
+require_relative 'pond'
 
 puts 'One day with the duck and waterlily'
-pond = DuckWaterlilyPond.new 3, 2
+pond = Pond.new 3, Duck, 2, WaterLily
 pond.simulate_one_day
