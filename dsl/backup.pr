@@ -1,0 +1,5 @@
+Backup.new do |b|
+  b.backup './tmp', file_name('*.rb')
+  b.to './tmp'
+  b.interval 60
+end
